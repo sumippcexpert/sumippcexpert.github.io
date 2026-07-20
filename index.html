@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sumi PPC Expert | Google Ads Specialist for HVAC Contractors</title>
+<meta name="description" content="Sumi Sultana is a Google Ads Specialist helping HVAC contractors generate more service calls through Search Ads, Performance Max, and accurate conversion tracking with GTM and GA4." />
+<meta name="keywords" content="Google Ads Specialist, Google Search Ads, HVAC Google Ads, HVAC Marketing, Lead Generation, Conversion Tracking, Google Tag Manager, Performance Max, Landing Page Optimization, Google Ads Audit, HVAC PPC" />
+<meta name="author" content="Sumi Sultana" />
+<link rel="canonical" href="https://sumippcexpert.github.io/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sumi PPC Expert | Google Ads Specialist for HVAC Contractors" />
+<meta property="og:description" content="Search Ads, Performance Max, and accurate conversion tracking — built for HVAC contractors who want more booked service calls." />
+<meta property="og:url" content="https://sumippcexpert.github.io/" />
+<meta property="og:image" content="https://sumippcexpert.github.io/sumi-profile.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E1B24'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23E0985A' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+<style>
+/* =========================================================
+   TOKENS
+========================================================= */
+:root{
+  --ink-base:#0E1B24;
+  --ink-raised:#142530;
+  --ink-raised-2:#1A2E3B;
+  --line:rgba(244,239,228,0.10);
+  --line-strong:rgba(244,239,228,0.20);
+
+  --text-hi:#F4EFE4;
+  --text-mid:rgba(244,239,228,0.70);
+  --text-low:rgba(244,239,228,0.45);
+
+  --copper:#C97C3D;
+  --copper-hi:#E0985A;
+  --signal:#2E9E6C;
+  --alert:#D65B5B;
+
+  --g-blue:#4285F4; --g-yellow:#FBBC04; --g-green:#34A853; --g-red:#EA4335;
+
+  --radius-card:18px;
+  --radius-sm:10px;
+  --font-display:'Space Grotesk', sans-serif;
+  --font-body:'Inter', system-ui, sans-serif;
+  --font-mono:'IBM Plex Mono', monospace;
+}
+
+/* =========================================================
+   RESET / BASE
+========================================================= */
+*{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0; background:var(--ink-base); color:var(--text-hi);
+  font-family:var(--font-body); line-height:1.5; -webkit-font-smoothing:antialiased;
+  opacity:0; animation:pageIn .6s ease forwards;
+}
+@keyframes pageIn{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+}
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; display:block; }
+::selection{ background:var(--copper); color:#1A0F05; }
+.wrap{ max-width:1180px; margin:0 auto; padding:0 24px; }
+section{ padding:88px 0; }
+h1,h2,h3,h4{ font-family:var(--font-display); margin:0; }
+p{ margin:0; }
+a:focus-visible, button:focus-visible, summary:focus-visible{
+  outline:2px solid var(--copper-hi); outline-offset:3px; border-radius:4px;
+}
+
+.eyebrow{ font-family:var(--font-mono); font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--copper-hi); }
+
+/* Buttons */
+.btn{
+  display:inline-flex; align-items:center; gap:8px; justify-content:center;
+  padding:15px 26px; border-radius:999px; font-weight:600; font-size:14.5px;
+  cursor:pointer; border:1px solid transparent; transition:transform .2s ease, background .2s ease, border-color .2s ease;
+  white-space:nowrap;
+}
+.btn-copper{ background:var(--copper); color:#1A0F05; }
+.btn-copper:hover{ background:var(--copper-hi); transform:translateY(-2px); }
+.btn-ghost{ background:transparent; color:var(--text-hi); border-color:var(--line-strong); }
+.btn-ghost:hover{ border-color:var(--copper); transform:translateY(-2px); background:rgba(244,239,228,0.06); }
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+header{
+  position:sticky; top:0; z-index:200; background:rgba(14,27,36,0.86); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1180px; margin:0 auto; }
+.brand{ display:flex; align-items:center; gap:10px; }
+.brand-mark{
+  width:38px; height:38px; border-radius:10px; background:linear-gradient(145deg,var(--copper),var(--copper-hi));
+  display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; color:#1A0F05; font-size:16px; flex:none;
+}
+.brand-text .name{ font-family:var(--font-display); font-weight:700; font-size:16px; color:var(--text-hi); }
+.brand-text .name .accent{ color:var(--copper-hi); }
+.brand-text .role{ font-family:var(--font-mono); font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--text-low); }
+
+.nav-links{ display:none; gap:6px; }
+.nav-links a{ padding:9px 14px; border-radius:999px; font-size:13.5px; font-weight:600; color:var(--text-mid); transition:color .2s ease, background .2s ease; }
+.nav-links a:hover{ color:var(--text-hi); background:rgba(244,239,228,0.06); }
+
+.nav-cta{ display:flex; align-items:center; gap:10px; }
+.nav-cta .btn{ padding:11px 20px; font-size:13.5px; display:none; }
+
+#mobile-toggle{
+  width:40px; height:40px; border-radius:10px; border:1px solid var(--line-strong); background:transparent;
+  display:flex; align-items:center; justify-content:center; cursor:pointer;
+}
+#mobile-toggle span, #mobile-toggle span::before, #mobile-toggle span::after{
+  content:""; display:block; width:18px; height:2px; background:var(--text-hi); position:relative; transition:.25s ease;
+}
+#mobile-toggle span::before{ position:absolute; top:-6px; }
+#mobile-toggle span::after{ position:absolute; top:6px; }
+#mobile-toggle.open span{ background:transparent; }
+#mobile-toggle.open span::before{ top:0; transform:rotate(45deg); background:var(--copper-hi); }
+#mobile-toggle.open span::after{ top:0; transform:rotate(-45deg); background:var(--copper-hi); }
+
+#mobile-menu{
+  max-height:0; overflow:hidden; background:var(--ink-raised); border-bottom:1px solid var(--line);
+  transition:max-height .3s ease;
+}
+#mobile-menu.open{ max-height:520px; }
+#mobile-menu a{
+  display:block; padding:14px 24px; font-size:14.5px; font-weight:600; color:var(--text-mid);
+  border-bottom:1px solid var(--line);
+}
+#mobile-menu a:hover{ background:rgba(244,239,228,0.06); color:var(--text-hi); }
+
+@media (min-width:920px){
+  .nav-links{ display:flex; }
+  .nav-cta .btn{ display:inline-flex; }
+  #mobile-toggle, #mobile-menu{ display:none; }
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+#top{
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(201,124,61,0.14), transparent 55%),
+    var(--ink-base);
+  padding-top:64px;
+}
+.hero-grid{ display:grid; gap:48px; padding:56px 0 40px; }
+.hero-eyebrow-row{ display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:20px; }
+.status-chip{
+  display:inline-flex; align-items:center; gap:7px; padding:6px 12px; border-radius:999px;
+  border:1px solid var(--line-strong); font-family:var(--font-mono); font-size:11.5px; font-weight:600; color:var(--signal);
+}
+.status-dot{ width:7px; height:7px; border-radius:50%; background:var(--signal); box-shadow:0 0 0 3px rgba(46,158,108,0.2); }
+
+.hero-h1{ font-size:clamp(30px,5.6vw,46px); line-height:1.16; font-weight:700; color:var(--text-hi); max-width:20ch; }
+.hero-h1 .accent{ color:var(--copper-hi); }
+.hero-desc{ margin-top:20px; font-size:16px; line-height:1.7; color:var(--text-mid); max-width:52ch; }
+.hero-actions{ margin-top:30px; display:flex; flex-wrap:wrap; gap:14px; }
+.hero-stats-row{ margin-top:40px; display:flex; flex-wrap:wrap; gap:32px; }
+.hero-stat .num{ font-family:var(--font-mono); font-size:20px; font-weight:600; color:var(--text-hi); }
+.hero-stat .lbl{ font-size:11.5px; color:var(--text-low); margin-top:4px; text-transform:uppercase; letter-spacing:.04em; }
+
+.hero-visual{ position:relative; padding:8px; }
+.ticket{
+  background:var(--text-hi); border-radius:var(--radius-card); padding:22px;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,0.5); position:relative; z-index:2;
+}
+.ticket-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; border-bottom:1px dashed rgba(36,26,14,0.18); padding-bottom:14px; margin-bottom:14px; }
+.ticket-head .job-no{ font-family:var(--font-mono); font-size:10.5px; color:rgba(36,26,14,0.5); letter-spacing:.05em; }
+.ticket-head .job-title{ font-family:var(--font-display); font-weight:700; font-size:15px; color:#1A0F05; margin-top:3px; }
+.ticket-status{ font-family:var(--font-mono); font-size:11px; font-weight:600; padding:5px 10px; border-radius:999px; background:rgba(46,158,108,0.15); color:#1F7A50; flex:none; }
+
+.sample-flag{ font-family:var(--font-mono); font-size:9.5px; letter-spacing:.06em; text-transform:uppercase; color:rgba(36,26,14,0.45); margin-bottom:12px; }
+
+.ad-mock{ background:#F3F5F0; border:1px solid rgba(36,26,14,0.1); border-radius:var(--radius-sm); padding:14px 16px; }
+.ad-mock .ad-tag{ display:inline-block; font-family:var(--font-body); font-weight:700; font-size:10.5px; color:#1a5d33; background:#e6f4ea; padding:2px 7px; border-radius:3px; margin-bottom:7px; }
+.ad-mock .ad-url{ font-family:var(--font-body); font-size:12.5px; color:#1a1a1a; opacity:.7; }
+.ad-mock .ad-headline{ font-family:var(--font-body); font-size:15.5px; color:#1558d6; font-weight:600; margin-top:4px; line-height:1.35; }
+.ad-mock .ad-desc{ font-family:var(--font-body); font-size:12.5px; color:#444; margin-top:6px; line-height:1.5; }
+
+.ticket-metrics{ display:flex; justify-content:space-between; margin-top:16px; padding-top:16px; border-top:1px dashed rgba(36,26,14,0.18); }
+.ticket-metrics .m-num{ font-family:var(--font-mono); font-weight:600; font-size:16px; color:#241A0E; }
+.ticket-metrics .m-lbl{ font-family:var(--font-mono); font-size:9px; color:rgba(36,26,14,0.5); text-transform:uppercase; letter-spacing:.05em; margin-top:3px; }
+
+.ticket-footer{ display:flex; align-items:center; justify-content:space-between; margin-top:16px; }
+.ticket-footer .assigned{ font-family:var(--font-mono); font-size:10.5px; color:rgba(36,26,14,0.55); }
+.ticket-footer .assigned b{ color:#241A0E; }
+.ticket-footer .verified{ font-family:var(--font-mono); font-size:10.5px; color:rgba(36,26,14,0.55); }
+
+.floater-badge{
+  position:absolute; display:flex; align-items:center; gap:8px; background:var(--ink-raised-2);
+  border:1px solid var(--line-strong); border-radius:999px; padding:9px 14px; box-shadow:0 14px 30px -12px rgba(0,0,0,0.5); z-index:3;
+}
+.floater-badge .fb-txt{ font-family:var(--font-mono); font-size:11px; font-weight:600; color:var(--text-hi); white-space:nowrap; }
+.floater-1{ top:-16px; left:8px; }
+.floater-2{ bottom:-16px; right:8px; }
+
+.hero-photo-wrap{ display:flex; align-items:center; gap:16px; margin-top:26px; }
+.hero-photo{ width:56px; height:56px; border-radius:50%; object-fit:cover; border:2px solid var(--copper); flex:none; }
+.hero-photo-name{ font-family:var(--font-display); font-weight:700; font-size:14.5px; color:var(--text-hi); }
+.hero-photo-role{ font-size:12.5px; color:var(--text-low); }
+
+@media (min-width:920px){
+  .hero-grid{ grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; }
+}
+
+/* =========================================================
+   TRUST / TOOLS
+========================================================= */
+#trust{ padding:56px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--ink-raised); }
+.trust-label{ font-family:var(--font-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--text-low); margin-bottom:8px; }
+.trust-sub{ font-size:13.5px; color:var(--text-mid); margin-bottom:26px; max-width:56ch; }
+.trust-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+.trust-badge{ display:flex; align-items:center; gap:10px; padding:14px 16px; background:var(--ink-raised-2); border:1px solid var(--line); border-radius:var(--radius-sm); }
+.trust-badge svg{ flex:none; }
+.trust-badge span{ font-size:13px; font-weight:600; color:var(--text-mid); }
+@media (min-width:700px){ .trust-grid{ grid-template-columns:repeat(3,1fr); } }
+@media (min-width:1024px){ .trust-grid{ grid-template-columns:repeat(6,1fr); } }
+
+/* =========================================================
+   SECTION HEAD (shared)
+========================================================= */
+.section-head{ max-width:640px; margin-bottom:48px; }
+.section-head h2{ font-size:clamp(26px,3.6vw,36px); line-height:1.18; color:var(--text-hi); font-weight:700; margin-top:12px; }
+.section-head p{ margin-top:14px; font-size:15.5px; line-height:1.65; color:var(--text-mid); max-width:56ch; }
+
+/* =========================================================
+   SERVICES
+========================================================= */
+.svc-grid{ display:grid; gap:18px; grid-template-columns:1fr; }
+.svc-card{
+  padding:26px; background:var(--ink-raised); border:1px solid var(--line); border-radius:var(--radius-card);
+  transition:transform .3s cubic-bezier(.2,.7,.2,1), border-color .3s ease, background .3s ease;
+}
+.svc-card:hover{ transform:translateY(-4px); border-color:var(--line-strong); background:var(--ink-raised-2); }
+.svc-icon{ width:42px; height:42px; border-radius:10px; background:rgba(201,124,61,0.12); display:flex; align-items:center; justify-content:center; margin-bottom:16px; }
+.svc-card h3{ font-size:17.5px; font-weight:700; color:var(--text-hi); margin-bottom:8px; }
+.svc-card p{ font-size:14px; line-height:1.6; color:var(--text-mid); }
+.svc-foot{ margin-top:36px; display:flex; flex-wrap:wrap; align-items:center; gap:16px; }
+.svc-foot p{ font-size:14px; color:var(--text-mid); }
+@media (min-width:700px){ .svc-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (min-width:1024px){ .svc-grid{ grid-template-columns:repeat(3,1fr); } }
+
+/* =========================================================
+   WHY CHOOSE ME
+========================================================= */
+#why{ background:var(--ink-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.why-intro{ font-size:clamp(20px,2.6vw,26px); font-weight:600; color:var(--text-hi); max-width:34ch; margin-bottom:44px; line-height:1.4; }
+.why-intro .accent{ color:var(--copper-hi); }
+.why-grid{ display:grid; gap:26px; grid-template-columns:1fr; }
+.why-point .idx{ font-family:var(--font-mono); font-size:12px; color:var(--copper-hi); margin-bottom:10px; }
+.why-point h3{ font-size:16.5px; font-weight:700; color:var(--text-hi); margin-bottom:7px; }
+.why-point p{ font-size:14.5px; line-height:1.65; color:var(--text-mid); }
+@media (min-width:800px){ .why-grid{ grid-template-columns:repeat(2,1fr); gap:36px 32px; } }
+
+/* =========================================================
+   RESULTS
+========================================================= */
+.results-grid{ display:grid; gap:18px; grid-template-columns:1fr; margin-bottom:20px; }
+.result-card{ padding:28px 24px; background:var(--ink-raised); border:1px solid var(--line); border-radius:var(--radius-card); text-align:left; }
+.result-card .num{ font-family:var(--font-mono); font-size:clamp(28px,4vw,36px); font-weight:600; color:var(--copper-hi); }
+.result-card .lbl{ margin-top:8px; font-size:13.5px; color:var(--text-mid); line-height:1.5; }
+.disclaimer{
+  font-size:12.5px; color:var(--text-low); border-left:2px solid var(--line-strong); padding-left:14px; margin-top:24px; max-width:64ch; line-height:1.6;
+}
+@media (min-width:700px){ .results-grid{ grid-template-columns:repeat(3,1fr); } }
+
+/* =========================================================
+   PROCESS
+========================================================= */
+.process-grid{ display:grid; gap:0; grid-template-columns:1fr; }
+.process-step{ display:flex; gap:20px; padding:26px 0; border-bottom:1px solid var(--line); }
+.process-step:last-child{ border-bottom:none; }
+.process-step .step-no{ font-family:var(--font-mono); font-size:13px; font-weight:600; color:var(--copper-hi); flex:none; width:44px; }
+.process-step h3{ font-size:16.5px; font-weight:700; color:var(--text-hi); margin-bottom:6px; }
+.process-step p{ font-size:14.5px; line-height:1.65; color:var(--text-mid); max-width:60ch; }
+
+/* =========================================================
+   CASE STUDIES
+========================================================= */
+#case-studies{ background:var(--ink-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.cs-grid{ display:grid; gap:18px; grid-template-columns:1fr; }
+.cs-card{ padding:26px; background:var(--ink-raised-2); border:1px dashed var(--line-strong); border-radius:var(--radius-card); }
+.cs-tag{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--text-low); margin-bottom:10px; }
+.cs-card h3{ font-size:16px; font-weight:700; color:var(--text-hi); margin-bottom:10px; }
+.cs-card p{ font-size:13.5px; line-height:1.6; color:var(--text-mid); }
+.cs-card p + p{ margin-top:8px; }
+@media (min-width:800px){ .cs-grid{ grid-template-columns:repeat(3,1fr); } }
+
+/* =========================================================
+   TESTIMONIALS
+========================================================= */
+.testi-viewport{ position:relative; max-width:680px; margin:0 auto; }
+.testi-slide{ display:none; padding:32px; background:var(--ink-raised); border:1px solid var(--line); border-radius:var(--radius-card); text-align:center; }
+.testi-slide.active{ display:block; }
+.testi-slide p.quote{ font-size:16.5px; line-height:1.7; color:var(--text-hi); font-style:italic; }
+.testi-slide .who{ margin-top:18px; font-size:13.5px; color:var(--text-low); font-family:var(--font-mono); }
+.testi-nav{ display:flex; align-items:center; justify-content:center; gap:18px; margin-top:22px; }
+.testi-arrow{ width:36px; height:36px; border-radius:50%; border:1px solid var(--line-strong); background:transparent; color:var(--text-hi); display:flex; align-items:center; justify-content:center; cursor:pointer; }
+.testi-arrow:hover{ border-color:var(--copper); }
+.testi-dots{ display:flex; gap:8px; }
+.testi-dot{ width:8px; height:8px; border-radius:50%; background:var(--line-strong); border:none; cursor:pointer; padding:0; }
+.testi-dot.active{ background:var(--copper-hi); }
+
+/* =========================================================
+   FAQ
+========================================================= */
+#faq{ background:var(--ink-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.faq-item{ border-bottom:1px solid var(--line); }
+.faq-item summary{
+  list-style:none; cursor:pointer; padding:20px 4px; display:flex; align-items:center; justify-content:space-between; gap:16px;
+  font-size:15.5px; font-weight:600; color:var(--text-hi);
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item .plus{ flex:none; font-family:var(--font-mono); font-size:18px; color:var(--copper-hi); transition:transform .2s ease; }
+.faq-item[open] .plus{ transform:rotate(45deg); }
+.faq-item .faq-a{ padding:0 4px 22px; font-size:14.5px; line-height:1.7; color:var(--text-mid); max-width:66ch; }
+
+/* =========================================================
+   CONTACT
+========================================================= */
+.contact-grid{ display:grid; gap:28px; grid-template-columns:1fr; }
+.contact-card{ padding:28px; background:var(--ink-raised); border:1px solid var(--line); border-radius:var(--radius-card); }
+.contact-card h3{ font-size:16px; font-weight:700; color:var(--text-hi); margin-bottom:16px; }
+.contact-row{ display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); font-size:14px; color:var(--text-mid); }
+.contact-row:last-child{ border-bottom:none; }
+.contact-row svg{ flex:none; }
+.contact-row a{ color:var(--text-hi); font-weight:600; word-break:break-word; }
+.contact-actions{ margin-top:20px; display:flex; flex-wrap:wrap; gap:12px; }
+.zcal-inline-widget{ min-height:60px; }
+@media (min-width:900px){ .contact-grid{ grid-template-columns:1fr 1.2fr; } }
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer{ padding:56px 0 130px; border-top:1px solid var(--line); }
+.foot-grid{ display:grid; gap:36px; grid-template-columns:1fr; }
+.foot-brand p{ margin-top:12px; font-size:13.5px; color:var(--text-mid); max-width:40ch; line-height:1.6; }
+.foot-col h4{ font-family:var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-low); margin-bottom:14px; }
+.foot-col a{ display:block; font-size:13.5px; color:var(--text-mid); padding:6px 0; }
+.foot-col a:hover{ color:var(--copper-hi); }
+.foot-bottom{ margin-top:44px; padding-top:24px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; font-size:12.5px; color:var(--text-low); }
+@media (min-width:800px){ .foot-grid{ grid-template-columns:1.4fr 1fr 1fr 1fr; } }
+@media (min-width:800px){ footer{ padding-bottom:56px; } }
+
+/* =========================================================
+   STICKY WHATSAPP + MOBILE CTA BAR
+========================================================= */
+#whatsapp-float{
+  position:fixed; right:18px; bottom:82px; z-index:300;
+  width:56px; height:56px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 12px 28px -8px rgba(0,0,0,0.5); transition:transform .2s ease;
+}
+#whatsapp-float:hover{ transform:translateY(-3px) scale(1.04); }
+
+#mobile-cta-bar{
+  position:fixed; left:0; right:0; bottom:0; z-index:290; display:flex; padding:12px 16px;
+  background:var(--ink-raised); border-top:1px solid var(--line-strong);
+  box-shadow:0 -8px 24px -12px rgba(0,0,0,0.5);
+}
+#mobile-cta-bar .btn{ width:100%; padding:14px; }
+
+@media (min-width:800px){
+  #whatsapp-float{ bottom:24px; }
+  #mobile-cta-bar{ display:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<header>
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">S</span>
+      <span class="brand-text">
+        <div class="name">Sumi <span class="accent">PPC</span> Expert</div>
+        <div class="role">Google Ads Specialist</div>
+      </span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Me</a>
+      <a href="#results">Results</a>
+      <a href="#process">Process</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="https://wa.me/8801611515718?text=Hi%20Sumi%2C%20I%27d%20like%20a%20free%20Google%20Ads%20audit"
+         class="btn btn-copper" target="_blank" rel="noopener" onclick="trackCTA('whatsapp_nav')">Free Audit</a>
+      <button id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+
+  <div id="mobile-menu">
+    <a href="#services">Services</a>
+    <a href="#why">Why Me</a>
+    <a href="#results">Results</a>
+    <a href="#process">Process</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div>
+        <div class="hero-eyebrow-row">
+          <span class="status-chip"><span class="status-dot"></span> Booking Google Ads Audits</span>
+          <span class="eyebrow">HVAC · SEARCH ADS</span>
+        </div>
+
+        <h1 class="hero-h1">Google Ads Expert | PPC Specialist for Local Service | <span class="accent">Grow Your Business Online</span> | DM for Work Collaboration.</h1>
+
+        <p class="hero-desc">I help HVAC businesses generate high-quality leads through Google Ads. From campaign setup and conversion tracking to optimization, I focus on increasing calls, booked appointments, and ROI.</p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/8801611515718?text=Hi%20Sumi%2C%20I%27d%20like%20a%20free%20Google%20Ads%20audit"
+             class="btn btn-copper" target="_blank" rel="noopener" onclick="trackCTA('whatsapp_hero')">Book a Free Google Ads Audit →</a>
+          <a href="https://zcal.co/sumippcspecialist" class="btn btn-ghost" target="_blank" rel="noopener" onclick="trackCTA('zcal_hero')">Book a Free Audit Call</a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat"><div class="num">USA · UK · CA</div><div class="lbl">Markets Served</div></div>
+          <div class="hero-stat"><div class="num">100%</div><div class="lbl">Tracking Verified</div></div>
+          <div class="hero-stat"><div class="num">HVAC</div><div class="lbl">Primary Focus</div></div>
+        </div>
+
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="sumi-profile.jpg" alt="Sumi Sultana, Google Ads Specialist" loading="lazy" width="56" height="56" />
+          <div>
+            <div class="hero-photo-name">Sumi Sultana</div>
+            <div class="hero-photo-role">Google Ads Specialist for Local HVAC Services</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floater-badge floater-1">
+          <span aria-hidden="true">📞</span>
+          <span class="fb-txt">+1 service call — sample</span>
+        </div>
+
+        <div class="ticket">
+          <div class="ticket-head">
+            <div>
+              <div class="job-no">CAMPAIGN PREVIEW</div>
+              <div class="job-title">HVAC Search Campaign</div>
+            </div>
+            <span class="ticket-status">● Live</span>
+          </div>
+
+          <div class="sample-flag">Illustrative ad preview — not a live client account</div>
+
+          <div class="ad-mock">
+            <span class="ad-tag">Ad</span>
+            <div class="ad-url">www.yourhvaccompany.com</div>
+            <div class="ad-headline">24/7 Emergency HVAC Repair — Same-Day Service</div>
+            <div class="ad-desc">Licensed HVAC technicians near you. Free estimate, no overtime fees. Book online in 60 seconds.</div>
+          </div>
+
+          <div class="ticket-metrics">
+            <div class="m-item"><div class="m-num">GTM</div><div class="m-lbl">Tag Manager</div></div>
+            <div class="m-item"><div class="m-num">GA4</div><div class="m-lbl">Tracking Live</div></div>
+            <div class="m-item"><div class="m-num">P Max</div><div class="m-lbl">Enabled</div></div>
+          </div>
+
+          <div class="ticket-footer">
+            <span class="assigned">Managed by: <b>Sumi Sultana</b></span>
+            <span class="verified">GTM ✓ VERIFIED</span>
+          </div>
+        </div>
+
+        <div class="floater-badge floater-2">
+          <span aria-hidden="true">✅</span>
+          <span class="fb-txt">Conversion tracked in GA4</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST / TOOLS
+============================================================ -->
+<section id="trust">
+  <div class="wrap">
+    <div class="trust-label">Tools & platforms I work in daily</div>
+    <p class="trust-sub">Not certification badges — these are the platforms every HVAC account I run is built and tracked on.</p>
+    <div class="trust-grid">
+      <div class="trust-badge">
+        <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#4285F4" stroke-width="2"/><path d="M10 4v6l4 2" stroke="#4285F4" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        <span>Google Search Ads</span>
+      </div>
+      <div class="trust-badge">
+        <svg width="20" height="20" viewBox="0 0 20 20"><rect x="2" y="2" width="16" height="16" rx="4" fill="none" stroke="#34A853" stroke-width="2"/><path d="M6 10l3 3 5-6" fill="none" stroke="#34A853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Performance Max</span>
+      </div>
+      <div class="trust-badge">
+        <svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 2l7 4v8l-7 4-7-4V6z" fill="none" stroke="#FBBC04" stroke-width="2"/></svg>
+        <span>Google Tag Manager</span>
+      </div>
+      <div class="trust-badge">
+        <svg width="20" height="20" viewBox="0 0 20 20"><path d="M4 16V8M10 16V4M16 16v-6" stroke="#EA4335" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>GA4 Analytics</span>
+      </div>
+      <div class="trust-badge">
+        <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#C97C3D" stroke-width="2"/><path d="M6 10l3 3 5-6" fill="none" stroke="#C97C3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Conversion Tracking</span>
+      </div>
+      <div class="trust-badge">
+        <svg width="20" height="20" viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="12" rx="2" fill="none" stroke="#4285F4" stroke-width="2"/><path d="M2 8h16" stroke="#4285F4" stroke-width="2"/></svg>
+        <span>Ads Audits</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+============================================================ -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Everything your HVAC Google Ads account needs — nothing generic.</h2>
+      <p>Every service below is built specifically around service-based, local HVAC businesses — not a repackaged general-PPC template.</p>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20"><circle cx="9" cy="9" r="6" fill="none" stroke="#E0985A" stroke-width="2"/><path d="M14 14l4 4" stroke="#E0985A" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Google Search Ads</h3>
+        <p>Search campaigns built around real HVAC search intent — emergency repair, install, and seasonal maintenance queries — with service-area targeting.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="3" fill="none" stroke="#E0985A" stroke-width="2"/><path d="M7 10h6M10 7v6" stroke="#E0985A" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Performance Max Campaigns</h3>
+        <p>Performance Max set up with the right asset groups and audience signals, so it complements Search instead of cannibalizing your best leads.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M4 16V8M10 16V4M16 16v-6" stroke="#E0985A" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Conversion Tracking Setup</h3>
+        <p>Calls, form fills, and booked jobs tracked accurately from day one, so every optimization decision is based on real outcomes, not clicks.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 2l7 4v8l-7 4-7-4V6z" fill="none" stroke="#E0985A" stroke-width="2"/></svg></div>
+        <h3>Google Tag Manager (GTM)</h3>
+        <p>Clean, maintainable GTM containers — no duplicate tags, no broken triggers — so your tracking keeps working as your site changes.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="12" rx="2" fill="none" stroke="#E0985A" stroke-width="2"/><path d="M2 8h16" stroke="#E0985A" stroke-width="2"/></svg></div>
+        <h3>Google Ads Audits</h3>
+        <p>A full account review — wasted spend, keyword match types, tracking gaps, and structure — with a clear, prioritized action list.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="2" fill="none" stroke="#E0985A" stroke-width="2"/><path d="M6 9h8M6 13h5" stroke="#E0985A" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Landing Page Review</h3>
+        <p>A review of your landing page against what your ads promise — load speed, call-to-action clarity, and mobile call/booking friction.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M3 13l5-5 3 3 6-6" stroke="#E0985A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Ongoing Campaign Optimization</h3>
+        <p>Regular bid, budget, and ad-copy adjustments based on booked-job data — plus reporting you can actually read.</p>
+      </div>
+    </div>
+
+    <div class="svc-foot">
+      <a href="https://wa.me/8801611515718?text=Hi%20Sumi%2C%20I%27d%20like%20to%20discuss%20a%20project" class="btn btn-copper" target="_blank" rel="noopener" onclick="trackCTA('whatsapp_services')">Discuss Your Project on WhatsApp</a>
+      <p>Custom quote based on your account and goals — no fixed packages listed here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE ME
+============================================================ -->
+<section id="why">
+  <div class="wrap">
+    <span class="eyebrow">Why Choose Me</span>
+    <h2 class="why-intro" style="margin-top:14px;"><span class="accent">Helping HVAC contractors</span> generate more service calls — that's the whole job.</h2>
+
+    <div class="why-grid">
+      <div class="why-point">
+        <div class="idx">01</div>
+        <h3>Built for HVAC, not generic PPC</h3>
+        <p>Campaigns are structured around how HVAC actually gets searched for — emergency vs. seasonal demand, service-area radius, and job type — not a copy-pasted generic template.</p>
+      </div>
+      <div class="why-point">
+        <div class="idx">02</div>
+        <h3>Tracking set up correctly from day one</h3>
+        <p>GTM, GA4, and conversion tracking are wired in before a single dollar is spent, so the lead data driving your decisions is trustworthy from the start.</p>
+      </div>
+      <div class="why-point">
+        <div class="idx">03</div>
+        <h3>Call & booking-focused optimization</h3>
+        <p>Bid and budget decisions are guided by real booked jobs and calls — not vanity metrics like clicks or impressions that don't pay your bills.</p>
+      </div>
+      <div class="why-point">
+        <div class="idx">04</div>
+        <h3>Clear, honest reporting</h3>
+        <p>You always know exactly what's spent, what's working, and what isn't — reported in plain language, not an agency jargon dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RESULTS
+============================================================ -->
+<section id="results">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Results</span>
+      <h2>What a well-run HVAC account can look like.</h2>
+      <p>Illustrative ranges based on typical HVAC account patterns — shown to set realistic expectations, not as a guarantee for every account.</p>
+    </div>
+
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="num">20–40%</div>
+        <div class="lbl">Typical increase in booked service calls after tracking + structure cleanup (illustrative)</div>
+      </div>
+      <div class="result-card">
+        <div class="num">3–5x</div>
+        <div class="lbl">Typical Search ROAS range for well-tracked local HVAC accounts (illustrative)</div>
+      </div>
+      <div class="result-card">
+        <div class="num">&lt; 24 hrs</div>
+        <div class="lbl">Typical turnaround to get GTM + GA4 conversion tracking correctly configured</div>
+      </div>
+    </div>
+
+    <p class="disclaimer">Figures shown are illustrative ranges based on typical HVAC account patterns, not guaranteed results for every account — actual outcomes depend on market, budget, and starting point. Real client figures will replace these once available, with permission.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS
+============================================================ -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Process</span>
+      <h2>A straightforward four-step process.</h2>
+      <p>No long onboarding, no confusing handoffs — here's exactly what happens after you reach out.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-no">01</div>
+        <div>
+          <h3>Audit</h3>
+          <p>A free review of your current Google Ads account (or a fresh-start plan if you're starting new) — covering keyword quality, wasted spend, tracking gaps, and landing page fit.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-no">02</div>
+        <div>
+          <h3>Setup</h3>
+          <p>GTM, GA4, and conversion tracking configured correctly, with campaign structure built around your service area and call/booking goals.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-no">03</div>
+        <div>
+          <h3>Launch</h3>
+          <p>Search and Performance Max campaigns go live — targeted by service type and geography, with proper negative keywords and ad copy from the start.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-no">04</div>
+        <div>
+          <h3>Optimize</h3>
+          <p>Ongoing bid, budget, and ad-copy adjustments based on real call and booking data, with regular, plain-language reporting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CASE STUDIES
+============================================================ -->
+<section id="case-studies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Case Studies</span>
+      <h2>Real client work — added as it becomes available.</h2>
+      <p>No verified case studies are attached to this profile yet. The structure below is shown so you can see the format — each will be replaced with real client detail, shared with permission.</p>
+    </div>
+
+    <div class="cs-grid">
+      <div class="cs-card">
+        <div class="cs-tag">Placeholder — Emergency Repair</div>
+        <h3>[ADD REAL CASE STUDY HERE]</h3>
+        <p>Challenge: [client challenge]</p>
+        <p>Approach: [what was changed]</p>
+        <p>Result: [real, verified outcome]</p>
+      </div>
+      <div class="cs-card">
+        <div class="cs-tag">Placeholder — Install & Replacement</div>
+        <h3>[ADD REAL CASE STUDY HERE]</h3>
+        <p>Challenge: [client challenge]</p>
+        <p>Approach: [what was changed]</p>
+        <p>Result: [real, verified outcome]</p>
+      </div>
+      <div class="cs-card">
+        <div class="cs-tag">Placeholder — Seasonal Maintenance</div>
+        <h3>[ADD REAL CASE STUDY HERE]</h3>
+        <p>Challenge: [client challenge]</p>
+        <p>Approach: [what was changed]</p>
+        <p>Result: [real, verified outcome]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <span class="eyebrow">Testimonials</span>
+      <h2>Client feedback, coming soon.</h2>
+      <p style="margin-left:auto;margin-right:auto;">No verified testimonials are attached to this profile yet. These will be added directly with client permission.</p>
+    </div>
+
+    <div class="testi-viewport">
+      <div class="testi-slide active">
+        <p class="quote">[ADD REAL TESTIMONIAL HERE]</p>
+        <div class="who">— [Client name], [Company / Industry]</div>
+      </div>
+      <div class="testi-slide">
+        <p class="quote">[ADD REAL TESTIMONIAL HERE]</p>
+        <div class="who">— [Client name], [Company / Industry]</div>
+      </div>
+      <div class="testi-slide">
+        <p class="quote">[ADD REAL TESTIMONIAL HERE]</p>
+        <div class="who">— [Client name], [Company / Industry]</div>
+      </div>
+
+      <div class="testi-nav">
+        <button class="testi-arrow" aria-label="Previous testimonial" onclick="testiMove(-1)">‹</button>
+        <div class="testi-dots">
+          <button class="testi-dot active" aria-label="Testimonial 1" onclick="testiGo(0)"></button>
+          <button class="testi-dot" aria-label="Testimonial 2" onclick="testiGo(1)"></button>
+          <button class="testi-dot" aria-label="Testimonial 3" onclick="testiGo(2)"></button>
+        </div>
+        <button class="testi-arrow" aria-label="Next testimonial" onclick="testiMove(1)">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions HVAC owners usually ask first.</h2>
+    </div>
+
+    <div>
+      <details class="faq-item" open>
+        <summary>How much should I budget for Google Ads as an HVAC contractor?<span class="plus">+</span></summary>
+        <div class="faq-a">It depends on your service area and how competitive your market is, but most local HVAC contractors I work with start around $1,000+ per month in ad spend. During the audit, I'll give you a specific recommendation based on your area and goals rather than a generic number.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need to sign a long-term contract?<span class="plus">+</span></summary>
+        <div class="faq-a">No long lock-in contracts. We agree on scope and pricing upfront, and you're free to pause or stop at any point — I'd rather earn the ongoing work by showing results.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How long before I start seeing results?<span class="plus">+</span></summary>
+        <div class="faq-a">Search campaigns can start generating calls within the first couple of weeks, but meaningful optimization takes a bit longer as we gather real conversion data. I'll walk you through a realistic timeline for your specific account during the audit.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Will you handle conversion tracking, or do I need my own developer?<span class="plus">+</span></summary>
+        <div class="faq-a">I handle GTM and GA4 conversion tracking setup directly — calls, form fills, and booking events. If your site needs deeper custom development, I'll flag exactly what's needed and coordinate around it.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work with HVAC companies outside the USA?<span class="plus">+</span></summary>
+        <div class="faq-a">Yes — alongside the USA, I work with HVAC contractors in the UK, Canada, and Australia. Campaign structure and compliance details are adjusted per country.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What if I already have a Google Ads account running?<span class="plus">+</span></summary>
+        <div class="faq-a">That's actually the most common starting point. I'll audit what's already running, keep what's working, and fix or rebuild what isn't — you won't need to start from zero.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's look at your Google Ads account.</h2>
+      <p>Message me directly on WhatsApp, or pick a time below for a free 30-minute audit call.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Direct Contact</h3>
+        <div class="contact-row">
+          <svg width="18" height="18" viewBox="0 0 18 18"><path d="M2 4l7 5 7-5" stroke="#E0985A" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="3" width="14" height="12" rx="2" fill="none" stroke="#E0985A" stroke-width="1.6"/></svg>
+          <span>Email: <a href="mailto:sumisultanangn@gmail.com">sumisultanangn@gmail.com</a></span>
+        </div>
+        <div class="contact-row">
+          <svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="7.5" fill="none" stroke="#25D366" stroke-width="1.6"/></svg>
+          <span>WhatsApp: <a href="https://wa.me/8801611515718" target="_blank" rel="noopener" onclick="trackCTA('whatsapp_contact')">Message Sumi directly</a></span>
+        </div>
+        <div class="contact-row">
+          <svg width="18" height="18" viewBox="0 0 18 18"><rect x="2" y="2" width="14" height="14" rx="3" fill="none" stroke="#E0985A" stroke-width="1.6"/></svg>
+          <span>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener">Sumi Sultana</a></span>
+        </div>
+        <div class="contact-row">
+          <svg width="18" height="18" viewBox="0 0 18 18"><rect x="2" y="2" width="14" height="14" rx="3" fill="none" stroke="#E0985A" stroke-width="1.6"/></svg>
+          <span>Facebook: <a href="https://www.facebook.com" target="_blank" rel="noopener">Sumi PPC Expert</a></span>
+        </div>
+        <div class="contact-actions">
+          <a href="https://wa.me/8801611515718?text=Hi%20Sumi%2C%20I%27d%20like%20a%20free%20Google%20Ads%20audit" class="btn btn-copper" target="_blank" rel="noopener" onclick="trackCTA('whatsapp_contact_card')">Book a Free Google Ads Audit</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Schedule a Free Audit Call</h3>
+        <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+        <div class="zcal-inline-widget"><a href="https://zcal.co/i/PhvVptgl" onclick="trackCTA('zcal_embed')">30 Minute Meeting - Schedule a meeting</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <span class="brand-text">
+            <div class="name">Sumi <span class="accent">PPC</span> Expert</div>
+            <div class="role">Google Ads Specialist</div>
+          </span>
+        </div>
+        <p>Google Ads Specialist for Local HVAC Services — helping HVAC contractors generate more service calls through Search Ads, Performance Max, and accurate conversion tracking.</p>
+      </div>
+
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <a href="#services">Services</a>
+        <a href="#why">Why Me</a>
+        <a href="#results">Results</a>
+        <a href="#process">Process</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>More</h4>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <a href="https://wa.me/8801611515718" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:sumisultanangn@gmail.com">Email</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Sumi PPC Expert. All rights reserved.</span>
+      <span>Case studies and testimonials are placeholders until real client data is added with permission.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     STICKY WHATSAPP + MOBILE CTA BAR
+============================================================ -->
+<a id="whatsapp-float" href="https://wa.me/8801611515718?text=Hi%20Sumi%2C%20I%27d%20like%20a%20free%20Google%20Ads%20audit"
+   target="_blank" rel="noopener" aria-label="Chat on WhatsApp" onclick="trackCTA('whatsapp_float')">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 00-8.66 15L2 22l5.2-1.36A10 10 0 1012 2z" fill="#fff"/><path d="M8.5 7.5c-.4 0-.9.1-1.2.6-.3.4-1 1-.9 2.4.1 1.4 1 2.8 1.2 3 .1.2 2 3.2 5 4.3 2.5 1 3 .8 3.5.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.4-.3-.8-.5-.4-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.4-.9 1.1-1.1 1.3-.2.2-.4.2-.8.1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7z" fill="#25D366"/></svg>
+</a>
+
+<div id="mobile-cta-bar">
+  <a href="https://zcal.co/sumippcspecialist" class="btn btn-copper" target="_blank" rel="noopener" onclick="trackCTA('zcal_mobile_bar')">Book a Free Audit Call</a>
+</div>
+
+<script>
+  // Conversion tracking hook — wire to real gtag() once GA4 is configured
+  function trackCTA(label){
+    if (typeof gtag === 'function') {
+      gtag('event', 'cta_click', { cta_label: label });
+    } else {
+      console.log('[CTA tracked - placeholder]', label);
+    }
+  }
+
+  // Mobile menu toggle
+  var toggle = document.getElementById('mobile-toggle');
+  var menu = document.getElementById('mobile-menu');
+  toggle.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // FAQ accordion — one open at a time
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item){
+    item.addEventListener('toggle', function(){
+      if (item.open) {
+        faqItems.forEach(function(other){ if (other !== item) other.open = false; });
+      }
+    });
+  });
+
+  // Testimonials carousel
+  var slides = document.querySelectorAll('.testi-slide');
+  var dots = document.querySelectorAll('.testi-dot');
+  var current = 0;
+  function testiGo(i){
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (i + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+  function testiMove(dir){ testiGo(current + dir); }
+</script>
+</body>
+</html>
